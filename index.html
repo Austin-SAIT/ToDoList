@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: navy;
+        }
+        .enter-text {
+            display: flex;
+            border: 2px solid purple;
+            border-radius: 30%;
+            height: 70px;
+            width: 250px;
+            align-items: center;
+            justify-content: center;
+            background-color: purple;
+        }
+
+        #list {
+            border: 2px solid purple;
+            background-color: blueviolet;
+            border-radius: 5%;
+        }
+        
+        button {
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+    <div class="enter-text">
+    <input id="input" type="text" placeholder="Enter List Items">
+    <button id="btn" onclick="addItem()">Add Item</button>
+    </div>
+    <h2>Items:</h2>
+    <div id="list"></div>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
